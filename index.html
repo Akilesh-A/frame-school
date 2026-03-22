@@ -1,0 +1,821 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced VFX Compositing course - Frame School</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">
+        <img src="images/logo.webp" alt="Frame School" class="logo-img" />
+      </a>
+      <div class="header-right">
+        <span class="header-query-text">Have any queries?</span>
+        <a href="#apply" class="header-cta">Talk to an Academic Counsellor</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════
+       HERO — loads instantly on page open
+       no scroll trigger needed here
+  ═════════════════════════════════════ -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="https://frameschool.in/wp-content/uploads/2024/01/girl_server_room_showreel-1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-image"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <!-- fadeInDown: heading drops in from top -->
+      <h1 class="animate__animated animate__fadeInDown"
+          style="animation-duration:1s;">
+        Master VFX Compositing with<br>
+        mentors from Hollywood studios
+      </h1>
+
+      <!-- fadeInUp with delay: sub text rises up after heading -->
+      <p class="hero-sub animate__animated animate__fadeInUp"
+         style="animation-duration:1s; animation-delay:0.3s; opacity:0; animation-fill-mode:forwards;">
+        6 Month Course | Optional Internship Included
+      </p>
+
+      <!-- fadeInUp with more delay: desc comes after sub -->
+      <p class="hero-desc animate__animated animate__fadeInUp"
+         style="animation-duration:1s; animation-delay:0.5s; opacity:0; animation-fill-mode:forwards;">
+        Join the 6-month Advanced Certification in AI-powered VFX Compositing <br>
+        and kickstart your career in film, TV, and OTT visual effects
+      </p>
+
+      <!-- fadeInUp last: button appears last -->
+      <a href="#apply" class="hero-btn animate__animated animate__fadeInUp"
+         style="animation-duration:1s; animation-delay:0.7s; opacity:0; animation-fill-mode:forwards;">
+        Book a Demo
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       STATS BAR
+       fadeInUp staggered — each number
+       pops up one after another
+  ═════════════════════════════════════ -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+
+      <div class="stat-item aos-item" data-animation="fadeInUp" data-delay="0">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Industry mentors</span>
+      </div>
+      <div class="stat-item aos-item" data-animation="fadeInUp" data-delay="100">
+        <span class="stat-number">20+ years</span>
+        <span class="stat-label">Studio experience</span>
+      </div>
+      <div class="stat-item aos-item" data-animation="fadeInUp" data-delay="200">
+        <span class="stat-number">100+</span>
+        <span class="stat-label">Films worked</span>
+      </div>
+      <div class="stat-item aos-item" data-animation="fadeInUp" data-delay="300">
+        <span class="stat-number">5+ years</span>
+        <span class="stat-label">Successful mentoring</span>
+      </div>
+      <div class="stat-item aos-item" data-animation="fadeInUp" data-delay="400">
+        <span class="stat-number">4.6 ★</span>
+        <span class="stat-label">Student rating</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       WHY SECTION
+       title: fadeInDown
+       cards: fadeInUp staggered (3 per row)
+  ═════════════════════════════════════ -->
+  <section class="why-section">
+    <div class="why-inner">
+
+      <h2 class="why-title aos-item" data-animation="fadeInDown" data-delay="0">Why Frame school</h2>
+      <p class="why-subtitle aos-item" data-animation="fadeInUp" data-delay="100">Not just another VFX school - we bring real industry experience to your screen</p>
+
+      <div class="why-grid">
+
+        <div class="why-card aos-item" data-animation="fadeInUp" data-delay="0">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Learn from Hollywood VFX Artists</h3>
+          <p class="why-card-desc">Train under professionals from global studios.</p>
+        </div>
+
+        <div class="why-card aos-item" data-animation="fadeInUp" data-delay="100">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Free Workstation PC</h3>
+          <p class="why-card-desc">Set up your home studio with no extra cost</p>
+        </div>
+
+        <div class="why-card aos-item" data-animation="fadeInUp" data-delay="200">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Hands-On Film Projects</h3>
+          <p class="why-card-desc">Practice on real film production tasks daily</p>
+        </div>
+
+        <div class="why-card aos-item" data-animation="fadeInUp" data-delay="0">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Optional Internship</h3>
+          <p class="why-card-desc">Work on studio pipelines to build your portfolio</p>
+        </div>
+
+        <div class="why-card aos-item" data-animation="fadeInUp" data-delay="100">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">1:1 Doubt Sessions</h3>
+          <p class="why-card-desc">Personalized attention to boost your progress</p>
+        </div>
+
+        <div class="why-card aos-item" data-animation="fadeInUp" data-delay="200">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+          </div>
+          <h3 class="why-card-title">Flexible and Affordable Education</h3>
+          <p class="why-card-desc">Zero-cost EMI make top-tier training accessible</p>
+        </div>
+
+      </div>
+
+      <div class="why-cta aos-item" data-animation="fadeInUp" data-delay="0">
+        <a href="#apply" class="why-btn">Talk to an Admission Expert</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       COURSE SECTION
+       image slides in from left
+       text slides in from right
+  ═════════════════════════════════════ -->
+  <section class="course-section">
+    <div class="course-inner">
+
+      <h2 class="course-title-main aos-item" data-animation="fadeInDown" data-delay="0">Course overview</h2>
+      <p class="course-subtitle aos-item" data-animation="fadeInUp" data-delay="100">Get hands-on training from industry experts and build a production-ready portfolio</p>
+
+      <div class="course-block">
+
+        <div class="swiper-wrapper-box aos-item" data-animation="fadeInLeft" data-delay="0">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/learn-section/COMPOSITING.png.webp" alt="Student work 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/learn-section/PAINT.png.webp" alt="Student work 2" />
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <p class="swiper-caption">Slide to see our student work</p>
+        </div>
+
+        <div class="course-info aos-item" data-animation="fadeInRight" data-delay="200">
+          <h3 class="course-title">Advanced Certification in VFX Compositing</h3>
+          <ul class="info-list">
+
+            <li class="info-item">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="4" width="18" height="16" rx="2" stroke="#e8b84b" stroke-width="1.6" fill="none" />
+                  <path d="M2 9h18" stroke="#e8b84b" stroke-width="1.6" />
+                  <path d="M7 2v4M15 2v4" stroke="#e8b84b" stroke-width="1.6" stroke-linecap="round" />
+                  <circle cx="11" cy="14" r="1.2" fill="#e8b84b" />
+                  <circle cx="7" cy="14" r="1.2" fill="#e8b84b" />
+                  <circle cx="15" cy="14" r="1.2" fill="#e8b84b" />
+                </svg>
+              </div>
+              <div class="info-text">
+                <strong>Duration:</strong>
+                <span>6 Months</span>
+              </div>
+            </li>
+
+            <li class="info-item">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="8" width="18" height="12" rx="2" stroke="#e8b84b" stroke-width="1.6" fill="none" />
+                  <path d="M7 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="#e8b84b" stroke-width="1.6" fill="none" />
+                  <path d="M2 13h18" stroke="#e8b84b" stroke-width="1.6" />
+                  <path d="M9 13v2h4v-2" stroke="#e8b84b" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="info-text">
+                <strong>Internship:</strong>
+                <span>Optional 3-Month Internship</span>
+              </div>
+            </li>
+
+            <li class="info-item">
+              <div class="info-icon">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="3" width="18" height="13" rx="2" stroke="#e8b84b" stroke-width="1.6" fill="none" />
+                  <path d="M8 19h6M11 16v3" stroke="#e8b84b" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="info-text">
+                <strong>Schedule:</strong>
+                <span>Hybrid program</span>
+              </div>
+            </li>
+
+          </ul>
+          <button class="btn-cta">Talk to an Admission Expert</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       LEARN SECTION
+       cards: fadeInUp staggered
+  ═════════════════════════════════════ -->
+  <section class="learn-section">
+    <div class="learn-inner">
+      <h2 class="learn-title aos-item" data-animation="fadeInDown" data-delay="0">What you'll learn</h2>
+      <p class="learn-subtitle aos-item" data-animation="fadeInUp" data-delay="100">Master the skills that top studios look for</p>
+
+      <div class="learn-grid">
+        <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="0">
+          <img src="images/learn-section/ROTOSCOPE.png.webp" alt="Rotoscopy">
+          <h3 class="learn-card-title">Rotoscopy</h3>
+        </div>
+        <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="100">
+          <img src="images/learn-section/PAINT.png.webp" alt="Paint/Prep">
+          <h3 class="learn-card-title">Paint/Prep</h3>
+        </div>
+        <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="200">
+          <img src="images/learn-section/MATCHMOVE.png.webp" alt="Matchmove">
+          <h3 class="learn-card-title">Matchmove</h3>
+        </div>
+        <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="300">
+          <img src="images/learn-section/COMPOSITING.png.webp" alt="Compositing">
+          <h3 class="learn-card-title">Compositing</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       CURRICULUM SECTION
+       logos: zoomIn staggered
+  ═════════════════════════════════════ -->
+  <section class="curriculum-section">
+    <div class="curriculum-inner">
+      <h2 class="curriculum-title aos-item" data-animation="fadeInUp" data-delay="0">Software covered in the curriculum</h2>
+      <div class="curriculum-grid">
+        <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="0">
+          <img src="images/curriculum/SILHOUETTE.png.webp" alt="Silhouette">
+        </div>
+        <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="100">
+          <img src="images/curriculum/MOCHA.png.webp" alt="Mocha">
+        </div>
+        <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="200">
+          <img src="images/curriculum/COMFY.png.webp" alt="ComfyUI">
+        </div>
+        <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="300">
+          <img src="images/curriculum/3DE.png.webp" alt="3DE">
+        </div>
+        <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="400">
+          <img src="images/curriculum/NUKE.png.webp" alt="NUKE X">
+        </div>
+      </div>
+      <a href="#" class="curriculum-cta aos-item" data-animation="fadeInUp" data-delay="0">Download Full Curriculum</a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       MENTORS SECTION
+       photos: fadeInUp staggered
+  ═════════════════════════════════════ -->
+  <section class="mentors-section">
+    <div class="mentors-inner">
+      <h2 class="mentors-title aos-item" data-animation="fadeInDown" data-delay="0">Master VFX with industry experts</h2>
+      <p class="mentors-subtitle aos-item" data-animation="fadeInUp" data-delay="100">Train under Hollywood-experienced VFX professionals who have worked on Oscar-winning films, regional cinema, TV shows, and ads.</p>
+
+      <!-- Desktop Grid -->
+      <div class="mentors-grid">
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="0">
+          <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="100">
+          <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="200">
+          <img src="images/experts/Sreejith.png.webp" alt="Sreejith">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="0">
+          <img src="images/experts/Mohan.png.webp" alt="Mentor 4">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="100">
+          <img src="images/experts/Tarab.png.webp" alt="Mentor 5">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="200">
+          <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6">
+        </div>
+      </div>
+
+      <!-- Mobile Swiper -->
+      <div class="mentors-swiper myMentorsSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Sreejith.png.webp" alt="Sreejith">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Mohan.png.webp" alt="Mentor 4">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Tarab.png.webp" alt="Mentor 5">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6">
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="mentors-cta aos-item" data-animation="fadeInUp" data-delay="0">
+        <a href="#apply" class="apply-btn">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       ALUMNI SECTION
+       left video: fadeInLeft
+       right video: fadeInRight
+  ═════════════════════════════════════ -->
+  <section class="alumni-section">
+    <div class="alumni-inner">
+      <h1 class="alumni-title aos-item" data-animation="fadeInDown" data-delay="0">Alumni showreel</h1>
+      <div class="alumni-flex">
+        <div class="alumni-video-wrap aos-item" data-animation="fadeInLeft" data-delay="0">
+          <iframe
+            src="https://www.youtube.com/embed/72F4--kmD5Q?start=22"
+            title="Student reel 2024"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <p class="alumni-caption">Student reel 2024</p>
+        </div>
+        <div class="alumni-video-wrap aos-item" data-animation="fadeInRight" data-delay="200">
+          <iframe
+            src="https://www.youtube.com/embed/cvOcm3VFqwY?start=1"
+            title="Student reel 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <p class="alumni-caption">Student reel 2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       CAREER SECTION
+       left text: fadeInLeft
+       right image: fadeInRight
+  ═════════════════════════════════════ -->
+  <section class="career-section">
+    <div class="career-inner">
+
+      <div class="career-left aos-item" data-animation="fadeInLeft" data-delay="0">
+        <h2 class="career-title">Build your career in VFX</h2>
+        <ul class="career-list">
+          <li class="career-item">
+            <span class="career-icon">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="8" width="18" height="12" rx="2" stroke="#e8b84b" stroke-width="1.6" fill="none"/>
+                <path d="M7 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="#e8b84b" stroke-width="1.6" fill="none"/>
+                <path d="M2 13h18" stroke="#e8b84b" stroke-width="1.6"/>
+                <path d="M9 13v2h4v-2" stroke="#e8b84b" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            Optional 3-month internship in a production studio
+          </li>
+          <li class="career-item">
+            <span class="career-icon">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="3" width="18" height="13" rx="2" stroke="#e8b84b" stroke-width="1.6" fill="none"/>
+                <path d="M8 19h6M11 16v3" stroke="#e8b84b" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            Portfolio building on actual film shots
+          </li>
+          <li class="career-item">
+            <span class="career-icon">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 16V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10" stroke="#e8b84b" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+                <path d="M1 16h20" stroke="#e8b84b" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M9 19h4M11 16v3" stroke="#e8b84b" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            Career guidance and demo reel feedback sessions
+          </li>
+        </ul>
+        <a href="#apply" class="career-btn">Know more about career outcomes</a>
+      </div>
+
+      <div class="career-right aos-item" data-animation="fadeInRight" data-delay="200">
+        <img src="images/carrer/1-copy-1024x683.jpg.webp" alt="VFX Artist at work" class="career-img" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       APPLY SECTION
+       left: fadeInLeft
+       form: fadeInRight
+  ═════════════════════════════════════ -->
+  <section class="apply-section" id="apply">
+    <div class="apply-inner">
+
+      <div class="apply-left aos-item" data-animation="fadeInLeft" data-delay="0">
+        <h2 class="apply-title">Limited seats only available – Apply Today!</h2>
+        <p class="apply-desc">Whether you're just starting out or looking to level up your VFX skills, we offer industry-focused programs that prepare you for success. Your journey could be the next story we celebrate!</p>
+      </div>
+
+      <div class="apply-right aos-item" data-animation="fadeInRight" data-delay="200">
+        <p class="form-top-text">Fill out the form below and get in touch with us!</p>
+
+        <div class="form-group">
+          <label class="form-label">Name <span class="req">*</span></label>
+          <input type="text" id="name" class="form-input" placeholder="Enter your name" />
+          <div class="form-error" id="name-error">Name is required.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Mobile number <span class="req">*</span></label>
+          <div class="phone-wrap">
+            <input type="tel" id="phone" class="form-input phone-input" placeholder="Eg. +91 99999 99999" />
+            <span class="flag">🇮🇳</span>
+          </div>
+          <div class="form-error" id="phone-error">This field is required. Please input a phone number.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Which situation fits you best? <span class="req">*</span></label>
+          <div class="select-wrap">
+            <select id="goal" class="form-select">
+              <option value="" disabled selected>Select your primary goal</option>
+              <option>I want to start a career in VFX</option>
+              <option>I want to upgrade my existing skills</option>
+              <option>I'm exploring options</option>
+            </select>
+            <span class="select-arrow">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M1 1l5 5 5-5" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+          <div class="form-error" id="goal-error">This field is required.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">When do you realistically want to begin training? <span class="req">*</span></label>
+          <div class="select-wrap">
+            <select id="timeline" class="form-select">
+              <option value="" disabled selected>Select the timeline</option>
+              <option>Immediately</option>
+              <option>Within 1 month</option>
+              <option>Within 3 months</option>
+              <option>Just exploring</option>
+            </select>
+            <span class="select-arrow">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M1 1l5 5 5-5" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+          <div class="form-error" id="timeline-error">This field is required.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Tell us more about yourself <span class="req">*</span></label>
+          <textarea id="about" class="form-textarea"></textarea>
+          <div class="form-error" id="about-error">This field is mandatory.</div>
+        </div>
+
+        <button class="form-btn" onclick="handleSubmit()">Chat Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       FAQ SECTION
+       items: fadeInUp staggered
+  ═════════════════════════════════════ -->
+  <section class="faq-section">
+    <div class="faq-inner">
+
+      <h2 class="faq-title aos-item" data-animation="fadeInDown" data-delay="0">Frequently asked questions</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="0">
+          <input type="checkbox" id="faq1" class="faq-toggle" checked />
+          <label class="faq-question" for="faq1">
+            <span>Is this course suitable for beginners?</span>
+            <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+          <div class="faq-answer">
+            <p>Yes, the course is beginner-friendly and covers foundational VFX compositing techniques, progressing to advanced skills using industry-standard software.</p>
+          </div>
+        </div>
+
+        <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="100">
+          <input type="checkbox" id="faq2" class="faq-toggle" />
+          <label class="faq-question" for="faq2">
+            <span>What support or opportunities are available after course completion?</span>
+            <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+          <div class="faq-answer">
+            <p>We provide career support, portfolio reviews, and placement assistance to help you start your VFX career in top studios.</p>
+          </div>
+        </div>
+
+        <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="200">
+          <input type="checkbox" id="faq3" class="faq-toggle" />
+          <label class="faq-question" for="faq3">
+            <span>Are installment payment options available?</span>
+            <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+          <div class="faq-answer">
+            <p>Yes, we offer <b>zero-interest installment</b> plans for a limited time, making it easier to manage your course fees. Don't miss this opportunity – contact us now for more details!</p>
+          </div>
+        </div>
+
+        <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="300">
+          <input type="checkbox" id="faq4" class="faq-toggle" />
+          <label class="faq-question" for="faq4">
+            <span>What are the technical specifications of the complimentary workstation?</span>
+            <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+          <div class="faq-answer">
+            <p>Processor: Intel Xeon 14 Core, E5 2680 V4 | RAM: 16GB DDR4 | Storage: 256GB SSD &amp; 1TB HDD | Graphics Card: 4GB | This system is fully compatible with the course, ensuring smooth performance for VFX compositing tasks.</p>
+          </div>
+        </div>
+
+        <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="400">
+          <input type="checkbox" id="faq5" class="faq-toggle" />
+          <label class="faq-question" for="faq5">
+            <span>Is the certificate accredited or industry-recognized?</span>
+            <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+          <div class="faq-answer">
+            <p>Yes, this certificate is industry-recognized by the Media and Entertainment Skills Council of India and Skill India. Additionally, you'll receive an internship completion certificate (studio name may vary based on our partner studios), equipping you with the in-demand skills sought by leading VFX studios.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Chat Button (mobile only) -->
+  <div class="sticky-chat">
+    <a href="https://wa.me/918610222693" class="sticky-chat-btn">Chat Now</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="footer-inner">
+
+      <div class="footer-left aos-item" data-animation="fadeInUp" data-delay="0">
+        <div class="footer-logo">
+          <img src="images/footer/logo-dark_mode.png.webp" alt="Frame School" />
+        </div>
+        <div class="footer-assoc-logos">
+          <img src="images/footer/associates.png.webp" alt="Skill India" />
+        </div>
+        <div class="footer-assoc-logos">
+          <img src="images/footer/google-rating-1.png.webp" alt="Google Rating" />
+        </div>
+      </div>
+
+      <div class="footer-mid aos-item" data-animation="fadeInUp" data-delay="100">
+        <div class="footer-address-block">
+          <p class="footer-addr-title">Administration Office (IND) :<br>
+          PNO-102/3, K.NO 2/2, F NO-4, 7th Phase, J.P. Nagar, Bengaluru, Karnataka - 560078</p>
+        </div>
+        <div class="footer-address-block">
+          <p class="footer-addr-title">Investor Relation (Massive VFX) :<br>
+          1st Floor, 4C 303, 4th Cross, OMBR Layout, Banaswadi, Bengaluru, Karnataka 560043</p>
+        </div>
+        <div class="footer-address-block">
+          <p class="footer-addr-title">Call us at (+91) 86102 22693</p>
+        </div>
+        <div class="footer-address-block">
+          <a href="https://wa.me/918610222693" class="footer-whatsapp">Chat on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer-right aos-item" data-animation="fadeInUp" data-delay="200">
+        <div class="footer-address-block">
+          <p class="footer-addr-title">Administration Office (US) :<br>
+          1976 S La Cienega Blvd, Unit C Los Angeles, CA 90034</p>
+        </div>
+        <div class="footer-address-block">
+          <p class="footer-addr-title">Investor Relation (ImageryFX Studios) :<br>
+          Hig-53, 2nd floor, Tanasha Nagar, Manikonda, Pokalwada, Telangana 500089</p>
+        </div>
+        <div class="footer-address-block">
+          <p class="footer-addr-title">Email us at <a href="mailto:admissions@frameschool.in" class="footer-email">admissions@frameschool.in</a></p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════
+       SCRIPTS
+  ═════════════════════════════════════ -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper init -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: ".mySwiper .swiper-button-next",
+        prevEl: ".mySwiper .swiper-button-prev",
+      },
+      speed: 500,
+    });
+
+    const mentorsSwiper = new Swiper(".myMentorsSwiper", {
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: ".myMentorsSwiper .swiper-button-next",
+        prevEl: ".myMentorsSwiper .swiper-button-prev",
+      },
+      speed: 500,
+      slidesPerView: 1,
+    });
+  </script>
+
+  <!-- Sticky chat -->
+  <script>
+    const stickyChat = document.querySelector('.sticky-chat');
+    const footer = document.querySelector('.footer-section');
+
+    function checkSticky() {
+      if (window.innerWidth > 768) {
+        stickyChat.style.transform = 'translateY(100%)';
+        return;
+      }
+      const footerTop = footer.getBoundingClientRect().top;
+      stickyChat.style.transform = footerTop <= window.innerHeight ? 'translateY(100%)' : 'translateY(0)';
+    }
+
+    window.addEventListener('scroll', checkSticky);
+    window.addEventListener('resize', checkSticky);
+    window.addEventListener('load', checkSticky);
+    checkSticky();
+  </script>
+
+  <!-- Form validation -->
+  <script>
+    function handleSubmit() {
+      let valid = true;
+      const fields = [
+        { id: 'name',     errorId: 'name-error' },
+        { id: 'phone',    errorId: 'phone-error' },
+        { id: 'goal',     errorId: 'goal-error' },
+        { id: 'timeline', errorId: 'timeline-error' },
+        { id: 'about',    errorId: 'about-error' },
+      ];
+      fields.forEach(({ id, errorId }) => {
+        const val = document.getElementById(id).value.trim();
+        const err = document.getElementById(errorId);
+        if (!val) {
+          err.classList.add('show');
+          valid = false;
+        } else {
+          err.classList.remove('show');
+        }
+      });
+      if (valid) alert('Form submitted successfully!');
+    }
+  </script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      const items = document.querySelectorAll('.aos-item');
+
+      /* Step 1: hide all items before animation */
+      items.forEach(function (el) {
+        el.style.opacity    = '0';
+        el.style.visibility = 'hidden';
+      });
+
+      /* Step 2: set up observer */
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            const el        = entry.target;
+            const animation = el.dataset.animation || 'fadeInUp';
+            const delay     = parseInt(el.dataset.delay) || 0;
+
+            /* Step 3: wait for delay then fire animation */
+            setTimeout(function () {
+              el.style.visibility = 'visible';
+              el.style.opacity    = '1';
+              el.classList.add('animate__animated', 'animate__' + animation);
+
+              /* Step 4: stop observing after animation fires */
+              observer.unobserve(el);
+            }, delay);
+          }
+        });
+      }, {
+        threshold:   0.12,              /* fires when 12% of element is visible */
+        rootMargin: '0px 0px -40px 0px' /* small offset so it doesn't fire too early */
+      });
+
+      /* Step 5: observe every item */
+      items.forEach(function (el) {
+        observer.observe(el);
+      });
+
+    });
+  </script>
+
+</body>
+</html>
