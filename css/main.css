@@ -1189,7 +1189,7 @@ text-align: left;
   
 } 
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .learn-card {
     flex: 1 1 calc(25% - 20px);
     max-width: calc(25% - 20px);
