@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Advanced VFX Compositing course - Frame School</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://www.youtube.com">
+  <link rel="dns-prefetch" href="https://www.youtube.com">
+  <link rel="preconnect" href="https://i.ytimg.com">
+ 
+  <link rel="preload" as="image" href="images/download.webp" media="(max-width: 768px)">
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="preload" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/animate.css"></noscript>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
 </head>
 
 <body>
@@ -208,10 +219,11 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="images/learn-section/COMPOSITING.png.webp" alt="Student work 1" />
+                <!-- FIX 3: lazy load -->
+                <img src="images/learn-section/COMPOSITING.png.webp" alt="Student work 1" loading="lazy" />
               </div>
               <div class="swiper-slide">
-                <img src="images/learn-section/PAINT.png.webp" alt="Student work 2" />
+                <img src="images/learn-section/PAINT.png.webp" alt="Student work 2" loading="lazy" />
               </div>
             </div>
             <div class="swiper-button-prev"></div>
@@ -288,19 +300,20 @@
 
       <div class="learn-grid">
         <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="0">
-          <img src="images/learn-section/ROTOSCOPE.png.webp" alt="Rotoscopy">
+          <!-- FIX 3: lazy load -->
+          <img src="images/learn-section/ROTOSCOPE.png.webp" alt="Rotoscopy" loading="lazy">
           <h3 class="learn-card-title">Rotoscopy</h3>
         </div>
         <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="100">
-          <img src="images/learn-section/PAINT.png.webp" alt="Paint/Prep">
+          <img src="images/learn-section/PAINT.png.webp" alt="Paint/Prep" loading="lazy">
           <h3 class="learn-card-title">Paint/Prep</h3>
         </div>
         <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="200">
-          <img src="images/learn-section/MATCHMOVE.png.webp" alt="Matchmove">
+          <img src="images/learn-section/MATCHMOVE.png.webp" alt="Matchmove" loading="lazy">
           <h3 class="learn-card-title">Matchmove</h3>
         </div>
         <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="300">
-          <img src="images/learn-section/COMPOSITING.png.webp" alt="Compositing">
+          <img src="images/learn-section/COMPOSITING.png.webp" alt="Compositing" loading="lazy">
           <h3 class="learn-card-title">Compositing</h3>
         </div>
       </div>
@@ -316,19 +329,19 @@
       <h2 class="curriculum-title aos-item" data-animation="fadeInUp" data-delay="0">Software covered in the curriculum</h2>
       <div class="curriculum-grid">
         <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="0">
-          <img src="images/curriculum/SILHOUETTE.png.webp" alt="Silhouette">
+          <img src="images/curriculum/SILHOUETTE.png.webp" alt="Silhouette" loading="lazy">
         </div>
         <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="100">
-          <img src="images/curriculum/MOCHA.png.webp" alt="Mocha">
+          <img src="images/curriculum/MOCHA.png.webp" alt="Mocha" loading="lazy">
         </div>
         <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="200">
-          <img src="images/curriculum/COMFY.png.webp" alt="ComfyUI">
+          <img src="images/curriculum/COMFY.png.webp" alt="ComfyUI" loading="lazy">
         </div>
         <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="300">
-          <img src="images/curriculum/3DE.png.webp" alt="3DE">
+          <img src="images/curriculum/3DE.png.webp" alt="3DE" loading="lazy">
         </div>
         <div class="curriculum-item aos-item" data-animation="zoomIn" data-delay="400">
-          <img src="images/curriculum/NUKE.png.webp" alt="NUKE X">
+          <img src="images/curriculum/NUKE.png.webp" alt="NUKE X" loading="lazy">
         </div>
       </div>
       <a href="#" class="curriculum-cta aos-item" data-animation="fadeInUp" data-delay="0">Download Full Curriculum</a>
@@ -347,22 +360,23 @@
       <!-- Desktop Grid -->
       <div class="mentors-grid">
         <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="0">
-          <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY">
+          <!-- FIX 3: lazy load -->
+          <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY" loading="lazy">
         </div>
         <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="100">
-          <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta">
+          <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta" loading="lazy">
         </div>
         <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="200">
-          <img src="images/experts/Sreejith.png.webp" alt="Sreejith">
+          <img src="images/experts/Sreejith.png.webp" alt="Sreejith" loading="lazy">
         </div>
         <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="0">
-          <img src="images/experts/Mohan.png.webp" alt="Mentor 4">
+          <img src="images/experts/Mohan.png.webp" alt="Mentor 4" loading="lazy">
         </div>
         <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="100">
-          <img src="images/experts/Tarab.png.webp" alt="Mentor 5">
+          <img src="images/experts/Tarab.png.webp" alt="Mentor 5" loading="lazy">
         </div>
         <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="200">
-          <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6">
+          <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6" loading="lazy">
         </div>
       </div>
 
@@ -370,22 +384,22 @@
       <div class="mentors-swiper myMentorsSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY">
+            <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY" loading="lazy">
           </div>
           <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta">
+            <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta" loading="lazy">
           </div>
           <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Sreejith.png.webp" alt="Sreejith">
+            <img src="images/experts/Sreejith.png.webp" alt="Sreejith" loading="lazy">
           </div>
           <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Mohan.png.webp" alt="Mentor 4">
+            <img src="images/experts/Mohan.png.webp" alt="Mentor 4" loading="lazy">
           </div>
           <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Tarab.png.webp" alt="Mentor 5">
+            <img src="images/experts/Tarab.png.webp" alt="Mentor 5" loading="lazy">
           </div>
           <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6">
+            <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6" loading="lazy">
           </div>
         </div>
         <div class="swiper-button-prev"></div>
@@ -407,24 +421,19 @@
     <div class="alumni-inner">
       <h1 class="alumni-title aos-item" data-animation="fadeInDown" data-delay="0">Alumni showreel</h1>
       <div class="alumni-flex">
+        <!-- FIX 7: YouTube facade instead of iframe -->
         <div class="alumni-video-wrap aos-item" data-animation="fadeInLeft" data-delay="0">
-          <iframe
-            src="https://www.youtube.com/embed/72F4--kmD5Q?start=22"
-            title="Student reel 2024"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <div class="yt-facade" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/72F4--kmD5Q?start=22&autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen style=\'width:100%;aspect-ratio:16/9;border-radius:6px;border:none;display:block\'></iframe>'" style="position:relative;display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden;cursor:pointer;">
+            <img src="https://i.ytimg.com/vi/72F4--kmD5Q/hqdefault.jpg" loading="lazy" alt="Student reel 2024" style="width:100%;height:100%;object-fit:cover;display:block;">
+            <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#e8192c;border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;pointer-events:none;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
           <p class="alumni-caption">Student reel 2024</p>
         </div>
         <div class="alumni-video-wrap aos-item" data-animation="fadeInRight" data-delay="200">
-          <iframe
-            src="https://www.youtube.com/embed/cvOcm3VFqwY?start=1"
-            title="Student reel 2023"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <div class="yt-facade" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/cvOcm3VFqwY?start=1&autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen style=\'width:100%;aspect-ratio:16/9;border-radius:6px;border:none;display:block\'></iframe>'" style="position:relative;display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden;cursor:pointer;">
+            <img src="https://i.ytimg.com/vi/cvOcm3VFqwY/hqdefault.jpg" loading="lazy" alt="Student reel 2023" style="width:100%;height:100%;object-fit:cover;display:block;">
+            <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#e8192c;border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;pointer-events:none;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
           <p class="alumni-caption">Student reel 2023</p>
         </div>
       </div>
@@ -477,7 +486,8 @@
       </div>
 
       <div class="career-right aos-item" data-animation="fadeInRight" data-delay="200">
-        <img src="images/carrer/1-copy-1024x683.jpg.webp" alt="VFX Artist at work" class="career-img" />
+        <!-- FIX 3: lazy load -->
+        <img src="images/carrer/1-copy-1024x683.jpg.webp" alt="VFX Artist at work" class="career-img" loading="lazy" />
       </div>
 
     </div>
@@ -654,13 +664,14 @@
 
       <div class="footer-left aos-item" data-animation="fadeInUp" data-delay="0">
         <div class="footer-logo">
-          <img src="images/footer/logo-dark_mode.png.webp" alt="Frame School" />
+          <!-- FIX 3: lazy load -->
+          <img src="images/footer/logo-dark_mode.png.webp" alt="Frame School" loading="lazy" />
         </div>
         <div class="footer-assoc-logos">
-          <img src="images/footer/associates.png.webp" alt="Skill India" />
+          <img src="images/footer/associates.png.webp" alt="Skill India" loading="lazy" />
         </div>
         <div class="footer-assoc-logos">
-          <img src="images/footer/google-rating-1.png.webp" alt="Google Rating" />
+          <img src="images/footer/google-rating-1.png.webp" alt="Google Rating" loading="lazy" />
         </div>
       </div>
 
@@ -702,29 +713,32 @@
        SCRIPTS
   ═════════════════════════════════════ -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- FIX 5: Swiper JS deferred -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Swiper init -->
+  <!-- Swiper init — FIX 5: wrapped in DOMContentLoaded for defer -->
   <script>
-    const swiper = new Swiper(".mySwiper", {
-      loop: true,
-      grabCursor: true,
-      navigation: {
-        nextEl: ".mySwiper .swiper-button-next",
-        prevEl: ".mySwiper .swiper-button-prev",
-      },
-      speed: 500,
-    });
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        grabCursor: true,
+        navigation: {
+          nextEl: ".mySwiper .swiper-button-next",
+          prevEl: ".mySwiper .swiper-button-prev",
+        },
+        speed: 500,
+      });
 
-    const mentorsSwiper = new Swiper(".myMentorsSwiper", {
-      loop: true,
-      grabCursor: true,
-      navigation: {
-        nextEl: ".myMentorsSwiper .swiper-button-next",
-        prevEl: ".myMentorsSwiper .swiper-button-prev",
-      },
-      speed: 500,
-      slidesPerView: 1,
+      const mentorsSwiper = new Swiper(".myMentorsSwiper", {
+        loop: true,
+        grabCursor: true,
+        navigation: {
+          nextEl: ".myMentorsSwiper .swiper-button-next",
+          prevEl: ".myMentorsSwiper .swiper-button-prev",
+        },
+        speed: 500,
+        slidesPerView: 1,
+      });
     });
   </script>
 
@@ -805,8 +819,8 @@
           }
         });
       }, {
-        threshold:   0.12,              /* fires when 12% of element is visible */
-        rootMargin: '0px 0px -40px 0px' /* small offset so it doesn't fire too early */
+        threshold:   0.12,
+        rootMargin: '0px 0px -40px 0px'
       });
 
       /* Step 5: observe every item */
