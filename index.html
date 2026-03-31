@@ -21,6 +21,68 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
+  <!-- ============================================
+     META PIXEL — FRAME SCHOOL
+     Pixel ID: 312288074461131
+     DO NOT MODIFY THIS BLOCK
+============================================ -->
+<script>
+  (function() {
+    // Prevent duplicate initialization
+    if (window.fbq) return;
+
+    // Initialize fbq function
+    var fbq = window.fbq = function() {
+      fbq.callMethod 
+        ? fbq.callMethod.apply(fbq, arguments) 
+        : fbq.queue.push(arguments);
+    };
+
+    if (!window._fbq) window._fbq = fbq;
+
+    fbq.push    = fbq;
+    fbq.loaded  = true;
+    fbq.version = '2.0';
+    fbq.queue   = [];
+
+    // Load the pixel script asynchronously
+    var script    = document.createElement('script');
+    script.async  = true;
+    script.src    = 'https://connect.facebook.net/en_US/fbevents.js';
+
+    // Safe insertion — won't break if no scripts exist
+    var firstScript = document.getElementsByTagName('script')[0];
+    if (firstScript && firstScript.parentNode) {
+      firstScript.parentNode.insertBefore(script, firstScript);
+    } else {
+      document.head.appendChild(script);
+    }
+
+    // Initialize pixel
+    fbq('init', '312288074461131');
+
+    // Track page view
+    fbq('track', 'PageView');
+
+    // Track content view
+    fbq('track', 'ViewContent');
+
+  })();
+</script>
+
+<!-- Fallback for browsers with JavaScript disabled -->
+<noscript>
+  <img 
+    height="1" 
+    width="1" 
+    style="display:none;" 
+    src="https://www.facebook.com/tr?id=312288074461131&ev=PageView&noscript=1"
+    alt=""
+  />
+</noscript>
+<!-- ============================================
+     END META PIXEL
+============================================ -->
 </head>
 
 <body>
@@ -67,7 +129,7 @@
       <!-- fadeInUp with more delay: desc comes after sub -->
       <p class="hero-desc animate__animated animate__fadeInUp"
          style="animation-duration:1s; animation-delay:0.5s; opacity:0; animation-fill-mode:forwards;">
-        Join the 6-month Advanced Certification in AI-powered VFX Compositing <br>
+        Join the 6-month Advanced Certification in VFX Compositing <br>
         and kickstart your career in film, TV, and OTT visual effects
       </p>
 
@@ -143,8 +205,8 @@
               <path d="M8 21h8M12 17v4" />
             </svg>
           </div>
-          <h3 class="why-card-title">Free Workstation PC</h3>
-          <p class="why-card-desc">Set up your home studio with no extra cost</p>
+          <h3 class="why-card-title">Workstation PC Support</h3>
+          <p class="why-card-desc">Set up your home studio with our assistance</p>
         </div>
 
         <div class="why-card aos-item" data-animation="fadeInUp" data-delay="200">
@@ -201,6 +263,69 @@
 
     </div>
   </section>
+    <!-- ════════════════════════════════
+       MENTORS SECTION
+       photos: fadeInUp staggered
+  ═════════════════════════════════════ -->
+  <section class="mentors-section">
+    <div class="mentors-inner">
+      <h2 class="mentors-title aos-item" data-animation="fadeInDown" data-delay="0">Master VFX with industry experts</h2>
+      <p class="mentors-subtitle aos-item" data-animation="fadeInUp" data-delay="100">Train under Hollywood-experienced VFX professionals who have worked on Oscar-winning films, regional cinema, TV shows, and ads.</p>
+
+      <!-- Desktop Grid -->
+      <div class="mentors-grid">
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="0">
+          <!-- FIX 3: lazy load -->
+          <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY" loading="lazy">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="100">
+          <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta" loading="lazy">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="200">
+          <img src="images/experts/Sreejith.png.webp" alt="Sreejith" loading="lazy">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="0">
+          <img src="images/experts/Mohan.png.webp" alt="Mentor 4" loading="lazy">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="100">
+          <img src="images/experts/Tarab.png.webp" alt="Mentor 5" loading="lazy">
+        </div>
+        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="200">
+          <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Mobile Swiper -->
+      <div class="mentors-swiper myMentorsSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY" loading="lazy">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta" loading="lazy">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Sreejith.png.webp" alt="Sreejith" loading="lazy">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Mohan.png.webp" alt="Mentor 4" loading="lazy">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Tarab.png.webp" alt="Mentor 5" loading="lazy">
+          </div>
+          <div class="swiper-slide mentors-swiper-slide">
+            <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6" loading="lazy">
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="mentors-cta aos-item" data-animation="fadeInUp" data-delay="0">
+        <a href="#apply" class="apply-btn">Apply Now</a>
+      </div>
+    </div>
+  </section>
 
   <!-- ════════════════════════════════
        COURSE SECTION
@@ -209,6 +334,7 @@
   ═════════════════════════════════════ -->
   <section class="course-section">
     <div class="course-inner">
+
 
       <h2 class="course-title-main aos-item" data-animation="fadeInDown" data-delay="0">Course overview</h2>
       <p class="course-subtitle aos-item" data-animation="fadeInUp" data-delay="100">Get hands-on training from industry experts and build a production-ready portfolio</p>
@@ -220,16 +346,16 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <!-- FIX 3: lazy load -->
-                <img src="images/learn-section/COMPOSITING.png.webp" alt="Student work 1" loading="lazy" />
+                <img src="images/learn-section/course-overviwe.jpg" alt="Student work 1" loading="lazy" />
               </div>
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <img src="images/learn-section/PAINT.png.webp" alt="Student work 2" loading="lazy" />
-              </div>
+              </div> -->
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
           </div>
-          <p class="swiper-caption">Slide to see our student work</p>
+          <!-- <p class="swiper-caption">Slide to see our student work</p> -->
         </div>
 
         <div class="course-info aos-item" data-animation="fadeInRight" data-delay="200">
@@ -299,6 +425,10 @@
       <p class="learn-subtitle aos-item" data-animation="fadeInUp" data-delay="100">Master the skills that top studios look for</p>
 
       <div class="learn-grid">
+         <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="300">
+          <img src="images/learn-section/COMPOSITING.png.webp" alt="Compositing" loading="lazy">
+          <h3 class="learn-card-title">Compositing</h3>
+        </div>
         <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="0">
           <!-- FIX 3: lazy load -->
           <img src="images/learn-section/ROTOSCOPE.png.webp" alt="Rotoscopy" loading="lazy">
@@ -312,10 +442,7 @@
           <img src="images/learn-section/MATCHMOVE.png.webp" alt="Matchmove" loading="lazy">
           <h3 class="learn-card-title">Matchmove</h3>
         </div>
-        <div class="learn-card aos-item" data-animation="fadeInUp" data-delay="300">
-          <img src="images/learn-section/COMPOSITING.png.webp" alt="Compositing" loading="lazy">
-          <h3 class="learn-card-title">Compositing</h3>
-        </div>
+       
       </div>
     </div>
   </section>
@@ -344,73 +471,11 @@
           <img src="images/curriculum/NUKE.png.webp" alt="NUKE X" loading="lazy">
         </div>
       </div>
-      <a href="#" class="curriculum-cta aos-item" data-animation="fadeInUp" data-delay="0">Download Full Curriculum</a>
+      <a href="#apply" class="curriculum-cta aos-item" data-animation="fadeInUp" data-delay="0">Get Full Curriculum</a>
     </div>
   </section>
 
-  <!-- ════════════════════════════════
-       MENTORS SECTION
-       photos: fadeInUp staggered
-  ═════════════════════════════════════ -->
-  <section class="mentors-section">
-    <div class="mentors-inner">
-      <h2 class="mentors-title aos-item" data-animation="fadeInDown" data-delay="0">Master VFX with industry experts</h2>
-      <p class="mentors-subtitle aos-item" data-animation="fadeInUp" data-delay="100">Train under Hollywood-experienced VFX professionals who have worked on Oscar-winning films, regional cinema, TV shows, and ads.</p>
 
-      <!-- Desktop Grid -->
-      <div class="mentors-grid">
-        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="0">
-          <!-- FIX 3: lazy load -->
-          <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY" loading="lazy">
-        </div>
-        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="100">
-          <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta" loading="lazy">
-        </div>
-        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="200">
-          <img src="images/experts/Sreejith.png.webp" alt="Sreejith" loading="lazy">
-        </div>
-        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="0">
-          <img src="images/experts/Mohan.png.webp" alt="Mentor 4" loading="lazy">
-        </div>
-        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="100">
-          <img src="images/experts/Tarab.png.webp" alt="Mentor 5" loading="lazy">
-        </div>
-        <div class="mentor-card aos-item" data-animation="fadeInUp" data-delay="200">
-          <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6" loading="lazy">
-        </div>
-      </div>
-
-      <!-- Mobile Swiper -->
-      <div class="mentors-swiper myMentorsSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/sathisha-2.png.webp" alt="Sathisha PY" loading="lazy">
-          </div>
-          <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Vivek.png.webp" alt="Vivek Mehta" loading="lazy">
-          </div>
-          <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Sreejith.png.webp" alt="Sreejith" loading="lazy">
-          </div>
-          <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Mohan.png.webp" alt="Mentor 4" loading="lazy">
-          </div>
-          <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Tarab.png.webp" alt="Mentor 5" loading="lazy">
-          </div>
-          <div class="swiper-slide mentors-swiper-slide">
-            <img src="images/experts/Venkatesh.png.webp" alt="Mentor 6" loading="lazy">
-          </div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-
-      <div class="mentors-cta aos-item" data-animation="fadeInUp" data-delay="0">
-        <a href="#apply" class="apply-btn">Apply Now</a>
-      </div>
-    </div>
-  </section>
 
   <!-- ════════════════════════════════
        ALUMNI SECTION
@@ -439,6 +504,128 @@
       </div>
     </div>
   </section>
+
+<!-- hear from students -->
+
+<section class="hear-from-students">
+  <div class="hfs-inner">
+
+    <h2 class="hfs-title aos-item" data-animation="fadeInDown" data-delay="0">Hear from our students</h2>
+    <p class="hfs-subtitle aos-item" data-animation="fadeInUp" data-delay="100">
+      Our students have contributed to major films like Upendra's UI, Shankar's Game Changer and two exciting
+      projects currently in production (details to be revealed post-release). This is proof that real mentorship
+      and production-ready skills make all the difference.
+    </p>
+
+    <!-- Swiper -->
+    <div class="swiper hfsSwiper aos-item" data-animation="fadeInUp" data-delay="200">
+      <div class="swiper-wrapper">
+
+    
+        <div class="swiper-slide hfs-slide">
+        <div class="hfs-card">
+            <div class="hfs-card1">
+
+                <div class="hfs-card-top">
+              <img src="images/students/mithun.webp" alt="Mithun" class="hfs-avatar" loading="lazy">
+              <div class="hfs-meta">
+                <span class="hfs-name">Mithun</span>
+                <span class="hfs-cohort">Compositing cohort, Winter ‘23 batch</span>
+              </div>
+              
+            </div>
+            <p class="hfs-quote">
+              “I did my advanced VFX compositing course at Frame School, and it was truly a fantastic experience! The mentors were super approachable, making learning enjoyable and helping me build strong production-level skills. I'm excited to say Frame School helped me get my dream VFX job - I highly recommend them”
+            </p>
+            </div>
+          <div class="hfs-card2"><img src="images/students/og.jpg" alt="UI Movie" class="hfs-poster" loading="lazy"></div></div>
+        </div>
+           <div class="swiper-slide hfs-slide">
+        <div class="hfs-card">
+            <div class="hfs-card1">
+
+                <div class="hfs-card-top">
+              <img src="images/students/arivalagan.webp" alt="Arivazhagan" class="hfs-avatar" loading="lazy">
+              <div class="hfs-meta">
+                <span class="hfs-name">Arivazhagan</span>
+                <span class="hfs-cohort">Compositing cohort, Winter ‘23 batch</span>
+              </div>
+              
+            </div>
+            <p class="hfs-quote">
+            “The management and mentors at Frame School were extremely supportive. When I joined, my VFX skills were very basic, but their structured training quickly took me from beginner to advanced level. Today, I’m proud to be part of the Upendra’s UI VFX team —a big thanks to Frame School’s fantastic guidance.”
+            </p>
+            </div>
+          <div class="hfs-card2"><img src="images/students/UI_promotional_poster-1.png.webp" alt="UI Movie" class="hfs-poster" loading="lazy"></div></div>
+        </div>
+
+           <div class="swiper-slide hfs-slide">
+        <div class="hfs-card">
+            <div class="hfs-card1">
+
+                <div class="hfs-card-top">
+              <img src="images/students/downloa.webp" alt="Kiran K" class="hfs-avatar" loading="lazy">
+              <div class="hfs-meta">
+                <span class="hfs-name">Kiran K</span>
+                <span class="hfs-cohort">Compositing cohort, Summer ‘23</span>
+              </div>
+              
+            </div>
+            <p class="hfs-quote">
+             “After completing my VFX course I gained the skills and confidence needed to pursue my career. Thanks to the hands-on training and expert mentorship, I’m proud to say I’ve been placed at PixelFrames VFX! Huge thanks to Frame School for their incredible support and guidance throughout the journey!”
+            </p>
+            </div>
+          <div class="hfs-card2"><img src="images/students/download.webp" alt="UI Movie" class="hfs-poster" loading="lazy"></div></div>
+        </div>
+           <div class="swiper-slide hfs-slide">
+        <div class="hfs-card">
+            <div class="hfs-card1">
+
+                <div class="hfs-card-top">
+              <img src="images/students/downloa.webp" alt="Ajay" class="hfs-avatar" loading="lazy">
+              <div class="hfs-meta">
+                <span class="hfs-name">Mouli</span>
+                <span class="hfs-cohort">Compositing cohort, Summer ‘23</span>
+              </div>
+              
+            </div>
+            <p class="hfs-quote">
+        “The management and mentors at Frame School were extremely supportive. When I joined, my VFX skills were very basic, but their structured training quickly took me from beginner to advanced level. Today, I’m proud to be part of the Upendra’s UI VFX team —a big thanks to Frame School’s fantastic guidance.”
+            </p>
+            </div>
+          <div class="hfs-card2"><img src="images/students/HHVM.webp" alt="UI Movie" class="hfs-poster" loading="lazy"></div></div>
+        </div>
+         
+
+      
+          <div class="hfs-card">
+            <div class="hfs-card-top">
+              <img src="images/experts/Sreejith.png.webp" alt="Ravi" class="hfs-avatar" loading="lazy" />
+              <div class="hfs-meta">
+                <span class="hfs-name">Ravi</span>
+                <span class="hfs-cohort">Compositing cohort, Winter '23</span>
+              </div>
+              <img src="images/learn-section/MATCHMOVE.png.webp" alt="Film" class="hfs-poster" loading="lazy" />
+            </div>
+            <p class="hfs-quote">
+              "The curriculum at Frame School is industry-standard and the mentors bring real Hollywood experience.
+              I went from knowing nothing about VFX to landing a full-time compositing role within 3 months of graduation."
+            </p>
+          </div>
+        </div> 
+
+      </div>
+
+      <!-- Navigation arrows -->
+      <!-- <div class="swiper-button-prev hfs-prev"></div>
+      <div class="swiper-button-next hfs-next"></div> -->
+
+      <!-- Pagination dots -->
+      <!-- <div class="swiper-pagination hfs-pagination"></div> -->
+    </div>
+
+  </div>
+</section>
 
   <!-- ════════════════════════════════
        CAREER SECTION
@@ -493,6 +680,17 @@
     </div>
   </section>
 
+  <section class="fees-section">
+    <div class="fees-inner">
+      <h1 class="fees-text">Program Fee</h1>
+      <h1 class="fees-price">₹ 94,999</h1>
+      <p>*No cost EMI Options available</p>
+      <p>*Referral rewards applicable</p>
+
+    </div>
+
+  </section>
+
   <!-- ════════════════════════════════
        APPLY SECTION
        left: fadeInLeft
@@ -522,6 +720,16 @@
             <span class="flag">🇮🇳</span>
           </div>
           <div class="form-error" id="phone-error">This field is required. Please input a phone number.</div>
+        </div>
+
+
+          <div class="form-group">
+          <label class="form-label">Email <span class="req">*</span></label>
+          <div class="phone-wrap">
+            <input type="email" id="email" class="form-input phone-input" placeholder="Enter your email" />
+            <!-- <span class="flag">🇮🇳</span> -->
+          </div>
+          <div class="form-error" id="email-error">This field is required. Please input a valid email address.</div>
         </div>
 
         <div class="form-group">
@@ -716,76 +924,115 @@
   <!-- FIX 5: Swiper JS deferred -->
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Swiper init — FIX 5: wrapped in DOMContentLoaded for defer -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const swiper = new Swiper(".mySwiper", {
-        loop: true,
-        grabCursor: true,
-        navigation: {
-          nextEl: ".mySwiper .swiper-button-next",
-          prevEl: ".mySwiper .swiper-button-prev",
-        },
-        speed: 500,
-      });
 
-      const mentorsSwiper = new Swiper(".myMentorsSwiper", {
-        loop: true,
-        grabCursor: true,
-        navigation: {
-          nextEl: ".myMentorsSwiper .swiper-button-next",
-          prevEl: ".myMentorsSwiper .swiper-button-prev",
-        },
-        speed: 500,
-        slidesPerView: 1,
-      });
+ <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      grabCursor: true,
+      speed: 500,
+      autoplay: {
+        delay: 3000, // 3 seconds
+        disableOnInteraction: false,
+      }
+      // navigation removed
     });
-  </script>
+
+    const mentorsSwiper = new Swiper(".myMentorsSwiper", {
+      loop: true,
+      grabCursor: true,
+      speed: 500,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      }
+      // navigation removed
+    });
+
+  });
+</script>
 
   <!-- Sticky chat -->
   <script>
-    const stickyChat = document.querySelector('.sticky-chat');
-    const footer = document.querySelector('.footer-section');
+  const stickyChat = document.querySelector('.sticky-chat');
+const footer = document.querySelector('.footer-section');
 
-    function checkSticky() {
-      if (window.innerWidth > 768) {
-        stickyChat.style.transform = 'translateY(100%)';
-        return;
-      }
-      const footerTop = footer.getBoundingClientRect().top;
-      stickyChat.style.transform = footerTop <= window.innerHeight ? 'translateY(100%)' : 'translateY(0)';
-    }
+function checkSticky() {
+  if (window.innerWidth > 768) {
+    stickyChat.style.transform = 'translateY(100%)';
+    return;
+  }
+  const footerTop = footer.getBoundingClientRect().top;
+  stickyChat.style.transform = footerTop <= window.innerHeight ? 'translateY(100%)' : 'translateY(0)';
+}
 
-    window.addEventListener('scroll', checkSticky);
-    window.addEventListener('resize', checkSticky);
-    window.addEventListener('load', checkSticky);
-    checkSticky();
+window.addEventListener('scroll', checkSticky);
+window.addEventListener('resize', checkSticky);
+window.addEventListener('load', checkSticky);
+
+// Small delay ensures layout is painted before first check
+setTimeout(checkSticky, 100);
   </script>
 
   <!-- Form validation -->
-  <script>
-    function handleSubmit() {
-      let valid = true;
-      const fields = [
-        { id: 'name',     errorId: 'name-error' },
-        { id: 'phone',    errorId: 'phone-error' },
-        { id: 'goal',     errorId: 'goal-error' },
-        { id: 'timeline', errorId: 'timeline-error' },
-        { id: 'about',    errorId: 'about-error' },
-      ];
-      fields.forEach(({ id, errorId }) => {
-        const val = document.getElementById(id).value.trim();
-        const err = document.getElementById(errorId);
-        if (!val) {
-          err.classList.add('show');
-          valid = false;
-        } else {
-          err.classList.remove('show');
-        }
-      });
-      if (valid) alert('Form submitted successfully!');
+ <script>
+  function handleSubmit() {
+  let valid = true;
+  const fields = [
+    { id: 'name',     errorId: 'name-error' },
+    { id: 'phone',    errorId: 'phone-error' },
+    { id: 'email',    errorId: 'email-error' },
+    { id: 'goal',     errorId: 'goal-error' },
+    { id: 'timeline', errorId: 'timeline-error' },
+    { id: 'about',    errorId: 'about-error' },
+  ];
+
+  fields.forEach(function({ id, errorId }) {
+    const val = document.getElementById(id).value.trim();
+    const err = document.getElementById(errorId);
+    if (!val) {
+      err.classList.add('show');
+      valid = false;
+    } else {
+      err.classList.remove('show');
     }
-  </script>
+  });
+
+  if (!valid) return;
+
+  const formData = {
+    name:         document.getElementById('name').value.trim(),
+    email:        document.getElementById('email').value.trim(),
+    phone:        document.getElementById('phone').value.trim(),
+    display_name: document.getElementById('name').value.trim(),
+    notes:        document.getElementById('goal').value.trim() + ' | ' + document.getElementById('timeline').value.trim() + ' | ' + document.getElementById('about').value.trim(),
+    source:       'Landing Page',
+    other_fields: {
+      goal:     document.getElementById('goal').value.trim(),
+      timeline: document.getElementById('timeline').value.trim(),
+      about:    document.getElementById('about').value.trim()
+    }
+  };
+
+  const btn = document.querySelector('.form-btn');
+  btn.disabled = true;
+  btn.innerText = 'Submitting...';
+
+  fetch('https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/iv6dCfUv#generic-webhook', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(formData)
+  })
+  .then(function() {
+    window.location.href = 'https://frameschool.in/thank-you/';
+  })
+  .catch(function() {
+    window.location.href = 'https://frameschool.in/thank-you/';
+  });
+}
+ </script>
 
 
   <script>
@@ -831,5 +1078,65 @@
     });
   </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    grabCursor: true,
+    navigation: {
+      nextEl: ".mySwiper .swiper-button-next",
+      prevEl: ".mySwiper .swiper-button-prev",
+    },
+    speed: 500,
+  });
+
+  const mentorsSwiper = new Swiper(".myMentorsSwiper", {
+    loop: true,
+    grabCursor: true,
+    navigation: {
+      nextEl: ".myMentorsSwiper .swiper-button-next",
+      prevEl: ".myMentorsSwiper .swiper-button-prev",
+    },
+    speed: 500,
+    slidesPerView: 1,
+  });
+
+const hfsSwiper = new Swiper(".hfsSwiper", {
+  loop: false,
+  grabCursor: true,
+  spaceBetween: 24,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  centerInsufficientSlides: true,
+  autoHeight: true,
+
+  autoplay: {
+    delay: 3000, // 3 seconds
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".hfs-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".hfs-next",
+    prevEl: ".hfs-prev",
+  },
+  speed: 500,
+
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      autoHeight: false
+    }
+  }
+});
+
+});
+</script>
 </body>
 </html>

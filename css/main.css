@@ -121,7 +121,7 @@ body {
 
 .hero-content {
   position: relative;
-  padding-left: 63px;
+  padding-left: 110px;
   z-index: 2;
   max-width: 1100px;
   padding-top: 120px;
@@ -342,10 +342,15 @@ body {
   flex: 0 0 430px;
 }
 
+/* ── Base swiper: no fixed size, just rounded corners ── */
 .swiper {
-  width: 430px;
   border-radius: 6px;
   overflow: hidden;
+}
+
+/* ── Course swiper specific width ── */
+.mySwiper {
+  width: 430px;
 }
 
 .swiper-slide img {
@@ -403,7 +408,6 @@ body {
 }
 
 .info-text strong {
-  display: block;
   font-size: 14px;
   font-weight: 700;
   color: #e8b84b;
@@ -1013,6 +1017,22 @@ body {
 .faq-toggle:checked ~ .faq-answer {
   max-height: 300px;
 }
+.fees-section {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.fees-text{
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.fees-price{
+  font-size: 32px;
+  color: #fff;
+}
 
 /* ══════════════════════════
    FOOTER
@@ -1129,12 +1149,165 @@ body {
   .sticky-chat { display: none !important; }
 }
 
+/* ══════════════════════════
+   HEAR FROM STUDENTS SECTION
+══════════════════════════ */
+.hear-from-students {
+  background: #fff;
+  padding: 70px 80px;
+}
+
+.hfs-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.hfs-title {
+  font-size: 56px;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.hfs-subtitle {
+  font-size: 15px;
+  color: #292929;
+  line-height: 1.65;
+  margin-bottom: 40px;
+}
+
+/* ── hfsSwiper: always auto height, never constrained ── */
+.hfsSwiper {
+  width: 100%;
+  min-height: unset !important;
+  max-height: unset !important;
+  position: relative;
+  padding: 0 36px 36px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hfs-slide {
+  box-sizing: border-box;
+  height: auto;
+}
+
+/* ── Card ── */
+.hfs-card {
+  background: #1a1a1a;
+  border-radius: 6px;
+  display: flex;
+  gap: 4px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hfs-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 20px 16px;
+}
+
+.hfs-card1 {
+  max-width: 60%;
+  width: 100%;
+}
+
+.hfs-card2 {
+  max-width: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hfs-avatar {
+  width: 65px !important;
+  height: 65px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #444;
+  background: #333;
+}
+
+.hfs-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.hfs-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hfs-cohort {
+  font-size: 12px;
+  color: #999;
+}
+
+.hfs-poster {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.hfs-quote {
+  padding: 20px 20px 24px;
+  font-size: 14px;
+  color: #e8b84b;
+  line-height: 1.75;
+  flex: 1;
+}
+
+/* ── Arrows ── */
+.hfs-prev,
+.hfs-next {
+  color: #fff !important;
+  background: rgba(0,0,0,0.45);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  --swiper-navigation-size: 14px;
+  top: 38%;
+}
+.hfs-prev { left: 0; }
+.hfs-next { right: 0; }
+
+/* ── Pagination dots ── */
+.hfs-pagination {
+  bottom: 4px;
+}
+.hfs-pagination .swiper-pagination-bullet {
+  background: #bbb;
+  opacity: 0.5;
+}
+.hfs-pagination .swiper-pagination-bullet-active {
+  background: #e8b84b;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .fees-section {
+    display: none;
+  }
+}
 /* ══════════════════════════════════════
    TABLET — 769px to 1024px
-   learn-card: 2 columns
-   mentor-card: 3 columns (keep desktop)
 ══════════════════════════════════════ */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .hear-from-students { padding: 60px 40px; }
+  .hfs-title { font-size: 40px; }
 
   /* Header */
   .header-inner { padding: 0 30px; }
@@ -1157,7 +1330,7 @@ body {
     flex: 0 0 48%;
     max-width: 48%;
   }
-  .swiper { width: 100%; }
+  .mySwiper { width: 100%; }
   .course-info {
     flex: 0 0 46%;
     max-width: 46%;
@@ -1229,10 +1402,41 @@ body {
 
 /* ══════════════════════════════════════
    MOBILE — max 768px
-   learn-card: 1 column (image big, text below)
-   mentors: swiper only
 ══════════════════════════════════════ */
 @media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+  .hero-sub {
+    text-align: center !important;
+  }
+
+  /* Hear from students */
+  .hear-from-students { padding: 50px 20px; }
+  .hfsSwiper { padding: 0 28px 36px; }
+  .hfs-title { font-size: 28px; }
+  .hfs-subtitle { font-size: 14px; }
+
+  /* Stack card vertically on mobile */
+  .hfs-card {
+    flex-direction: column;
+  }
+  .hfs-card1 {
+    max-width: 100%;
+    width: 100%;
+  }
+  .hfs-card2 {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px 20px;
+    justify-content: flex-start;
+  }
+  .hfs-poster {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
 
   /* Header */
   .site-header { height: 75px; }
@@ -1288,7 +1492,14 @@ body {
   .course-title-main { font-size: 30px; padding-top: 20px; text-align: center; }
   .course-block { display: block; width: 100%; }
   .swiper-wrapper-box { flex: 0 0 100%; width: 100%; max-width: 100%; }
-  .swiper { width: 100%; min-height: 230px; max-height: 320px; }
+
+  /* ── Only mySwiper gets fixed mobile heights — NOT hfsSwiper ── */
+  .mySwiper {
+    width: 100%;
+    min-height: 230px;
+    max-height: 320px;
+  }
+
   .course-info {
     margin-top: 20px;
     width: 100%;
@@ -1299,10 +1510,7 @@ body {
   .info-list { padding: 0 !important; }
   .btn-cta { display: none; }
 
-  /* ══════════════════════════
-     LEARN — mobile: 1 column
-     full width image + title below
-  ══════════════════════════ */
+  /* LEARN — mobile: 1 column */
   .learn-section { padding: 50px 0; }
   .learn-title { font-size: 30px; }
   .learn-subtitle { font-size: 16px; }
@@ -1326,8 +1534,6 @@ body {
   }
 
   .learn-card img {
-    width: 100% !important;
-    height: 200px !important;
     object-fit: cover !important;
     display: block !important;
   }
@@ -1346,9 +1552,7 @@ body {
     max-width: calc(50% - 12px);
   }
 
-  /* ══════════════════════════
-     MENTORS — hide grid, show swiper
-  ══════════════════════════ */
+  /* Mentors — hide grid, show swiper */
   .mentors-grid { display: none !important; }
   .mentors-swiper {
     display: block !important;
@@ -1359,7 +1563,6 @@ body {
   .mentors-title { font-size: 28px; }
   .mentors-subtitle { font-size: 14px; margin-bottom: 30px; }
 
-  /* Fix swiper navigation buttons overlap */
   .mentors-swiper .swiper-button-prev,
   .mentors-swiper .swiper-button-next {
     top: 40%;
@@ -1415,6 +1618,10 @@ body {
     max-width: calc(50% - 12px);
   }
   .learn-card img {
-    height: 180px !important;
+    height: 320px !important;
+  }
+  .hero-btn { display: none; }
+  .hero {
+    height: 80vh;
   }
 }
