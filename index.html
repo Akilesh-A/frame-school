@@ -109,7 +109,7 @@
   ═════════════════════════════════════ -->
   <section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
-      <source src="https://frameschool.in/wp-content/uploads/2024/01/girl_server_room_showreel-1.mp4" type="video/mp4">
+      <source src="images/mp-4/girl_server_room_showreel-1.mp4" type="video/mp4">
     </video>
     <div class="hero-image"></div>
     <div class="hero-overlay"></div>
@@ -349,7 +349,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <!-- FIX 3: lazy load -->
-                <img src="images/learn-section/course-overviwe.jpg" alt="Student work 1" loading="lazy" />
+                <img src="images/learn-section/course-overviwe.webp" alt="Student work 1" loading="lazy" />
               </div>
               <!-- <div class="swiper-slide">
                 <img src="images/learn-section/PAINT.png.webp" alt="Student work 2" loading="lazy" />
@@ -492,14 +492,14 @@
         <!-- FIX 7: YouTube facade instead of iframe -->
         <div class="alumni-video-wrap aos-item" data-animation="fadeInLeft" data-delay="0">
           <div class="yt-facade" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/72F4--kmD5Q?start=22&autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen style=\'width:100%;aspect-ratio:16/9;border-radius:6px;border:none;display:block\'></iframe>'" style="position:relative;display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden;cursor:pointer;">
-            <img src="https://i.ytimg.com/vi/72F4--kmD5Q/hqdefault.jpg" loading="lazy" alt="Student reel 2024" style="width:100%;height:100%;object-fit:cover;display:block;">
+            <img src="images/yt/yt1.webp" loading="lazy" alt="Student reel 2024" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#e8192c;border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;pointer-events:none;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span>
           </div>
           <p class="alumni-caption">Student reel 2024</p>
         </div>
         <div class="alumni-video-wrap aos-item" data-animation="fadeInRight" data-delay="200">
           <div class="yt-facade" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/cvOcm3VFqwY?start=1&autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen style=\'width:100%;aspect-ratio:16/9;border-radius:6px;border:none;display:block\'></iframe>'" style="position:relative;display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden;cursor:pointer;">
-            <img src="https://i.ytimg.com/vi/cvOcm3VFqwY/hqdefault.jpg" loading="lazy" alt="Student reel 2023" style="width:100%;height:100%;object-fit:cover;display:block;">
+            <img src="images/yt/yt.webp" loading="lazy" alt="Student reel 2023" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#e8192c;border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;pointer-events:none;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span>
           </div>
           <p class="alumni-caption">Student reel 2023</p>
@@ -541,7 +541,7 @@
               “I did my advanced VFX compositing course at Frame School, and it was truly a fantastic experience! The mentors were super approachable, making learning enjoyable and helping me build strong production-level skills. I'm excited to say Frame School helped me get my dream VFX job - I highly recommend them”
             </p>
             </div>
-          <div class="hfs-card2"><img src="images/students/og.jpg" alt="UI Movie" class="hfs-poster" loading="lazy"></div></div>
+          <div class="hfs-card2"><img src="images/students/og.webp" alt="UI Movie" class="hfs-poster" loading="lazy"></div></div>
         </div>
            <div class="swiper-slide hfs-slide">
         <div class="hfs-card">
@@ -929,20 +929,30 @@
 
 
  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    
-    const swiper = new Swiper(".mySwiper", {
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* =======================
+     SWIPERS
+  ======================= */
+
+  if (document.querySelector('.mySwiper')) {
+    new Swiper(".mySwiper", {
       loop: true,
       grabCursor: true,
       speed: 500,
       autoplay: {
-        delay: 3000, // 3 seconds
+        delay: 3000,
         disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".mySwiper .swiper-button-next",
+        prevEl: ".mySwiper .swiper-button-prev",
       }
-      // navigation removed
     });
+  }
 
-    const mentorsSwiper = new Swiper(".myMentorsSwiper", {
+  if (document.querySelector('.myMentorsSwiper')) {
+    new Swiper(".myMentorsSwiper", {
       loop: true,
       grabCursor: true,
       speed: 500,
@@ -950,194 +960,181 @@
       autoplay: {
         delay: 1500,
         disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".myMentorsSwiper .swiper-button-next",
+        prevEl: ".myMentorsSwiper .swiper-button-prev",
       }
-      // navigation removed
+    });
+  }
+
+  if (document.querySelector('.hfsSwiper')) {
+    new Swiper(".hfsSwiper", {
+      loop: false,
+      grabCursor: true,
+      spaceBetween: 24,
+      slidesPerView: 1,
+      watchOverflow: true,
+      centerInsufficientSlides: true,
+      autoHeight: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".hfs-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".hfs-next",
+        prevEl: ".hfs-prev",
+      },
+      speed: 500,
+      breakpoints: {
+        769: {
+          slidesPerView: 2,
+          autoHeight: false
+        }
+      }
+    });
+  }
+
+  /* =======================
+     STICKY CHAT
+  ======================= */
+
+  const stickyChat = document.querySelector('.sticky-chat');
+  const footer = document.querySelector('.footer-section');
+
+  function checkSticky() {
+    if (!stickyChat || !footer) return;
+
+    if (window.innerWidth > 768) {
+      stickyChat.style.transform = 'translateY(100%)';
+      return;
+    }
+
+    const footerTop = footer.getBoundingClientRect().top;
+
+    stickyChat.style.transform =
+      footerTop <= window.innerHeight
+        ? 'translateY(100%)'
+        : 'translateY(0)';
+  }
+
+  window.addEventListener('scroll', checkSticky);
+  window.addEventListener('resize', checkSticky);
+  window.addEventListener('load', checkSticky);
+  setTimeout(checkSticky, 100);
+
+  /* =======================
+     FORM SUBMIT
+  ======================= */
+
+  window.handleSubmit = function () {
+    let valid = true;
+
+    const fields = [
+      { id: 'name', errorId: 'name-error' },
+      { id: 'phone', errorId: 'phone-error' },
+      { id: 'email', errorId: 'email-error' },
+      { id: 'goal', errorId: 'goal-error' },
+      { id: 'timeline', errorId: 'timeline-error' },
+      { id: 'about', errorId: 'about-error' },
+    ];
+
+    fields.forEach(function({ id, errorId }) {
+      const val = document.getElementById(id).value.trim();
+      const err = document.getElementById(errorId);
+
+      if (!val) {
+        err.classList.add('show');
+        valid = false;
+      } else {
+        err.classList.remove('show');
+      }
     });
 
-  });
-</script>
+    if (!valid) return;
 
-  <!-- Sticky chat -->
-  <script>
-  const stickyChat = document.querySelector('.sticky-chat');
-const footer = document.querySelector('.footer-section');
-
-function checkSticky() {
-  if (window.innerWidth > 768) {
-    stickyChat.style.transform = 'translateY(100%)';
-    return;
-  }
-  const footerTop = footer.getBoundingClientRect().top;
-  stickyChat.style.transform = footerTop <= window.innerHeight ? 'translateY(100%)' : 'translateY(0)';
-}
-
-window.addEventListener('scroll', checkSticky);
-window.addEventListener('resize', checkSticky);
-window.addEventListener('load', checkSticky);
-
-// Small delay ensures layout is painted before first check
-setTimeout(checkSticky, 100);
-  </script>
-
-  <!-- Form validation -->
- <script>
-  function handleSubmit() {
-  let valid = true;
-  const fields = [
-    { id: 'name',     errorId: 'name-error' },
-    { id: 'phone',    errorId: 'phone-error' },
-    { id: 'email',    errorId: 'email-error' },
-    { id: 'goal',     errorId: 'goal-error' },
-    { id: 'timeline', errorId: 'timeline-error' },
-    { id: 'about',    errorId: 'about-error' },
-  ];
-
-  fields.forEach(function({ id, errorId }) {
-    const val = document.getElementById(id).value.trim();
-    const err = document.getElementById(errorId);
-    if (!val) {
-      err.classList.add('show');
-      valid = false;
-    } else {
-      err.classList.remove('show');
+    function getParam(name) {
+      const url = new URLSearchParams(window.location.search);
+      return url.get(name) || '';
     }
-  });
 
-  if (!valid) return;
+    const formData = {
+      name: document.getElementById('name').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      phone: document.getElementById('phone').value.trim(),
+      display_name: document.getElementById('name').value.trim(),
+      notes:
+        document.getElementById('goal').value.trim() + ' | ' +
+        document.getElementById('timeline').value.trim() + ' | ' +
+        document.getElementById('about').value.trim(),
+      source: getParam('utm_source') || 'Landing Page',
+      other_fields: {
+        goal: document.getElementById('goal').value.trim(),
+        timeline: document.getElementById('timeline').value.trim(),
+        about: document.getElementById('about').value.trim(),
+        utm_source: getParam('utm_source'),
+        utm_medium: getParam('utm_medium'),
+        utm_campaign: getParam('utm_campaign'),
+        utm_content: getParam('utm_content'),
+        utm_term: getParam('utm_term')
+      }
+    };
 
-  const formData = {
-    name:         document.getElementById('name').value.trim(),
-    email:        document.getElementById('email').value.trim(),
-    phone:        document.getElementById('phone').value.trim(),
-    display_name: document.getElementById('name').value.trim(),
-    notes:        document.getElementById('goal').value.trim() + ' | ' + document.getElementById('timeline').value.trim() + ' | ' + document.getElementById('about').value.trim(),
-    source:       'Landing Page',
-    other_fields: {
-      goal:     document.getElementById('goal').value.trim(),
-      timeline: document.getElementById('timeline').value.trim(),
-      about:    document.getElementById('about').value.trim()
-    }
+    const btn = document.querySelector('.form-btn');
+    btn.disabled = true;
+    btn.innerText = 'Submitting...';
+
+    fetch('https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/iv6dCfUv#generic-webhook', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    })
+    .then(function() {
+      window.location.href = 'https://frameschool.in/thank-you/';
+    })
+    .catch(function() {
+      window.location.href = 'https://frameschool.in/thank-you/';
+    });
   };
 
-  const btn = document.querySelector('.form-btn');
-  btn.disabled = true;
-  btn.innerText = 'Submitting...';
+  /* =======================
+     AOS ANIMATION
+  ======================= */
 
-  fetch('https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/iv6dCfUv#generic-webhook', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(formData)
-  })
-  .then(function() {
-    window.location.href = 'https://frameschool.in/thank-you/';
-  })
-  .catch(function() {
-    window.location.href = 'https://frameschool.in/thank-you/';
+  const items = document.querySelectorAll('.aos-item');
+
+  items.forEach(function (el) {
+    el.style.opacity = '0';
+    el.style.visibility = 'hidden';
   });
-}
- </script>
 
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const animation = el.dataset.animation || 'fadeInUp';
+        const delay = parseInt(el.dataset.delay) || 0;
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-      const items = document.querySelectorAll('.aos-item');
-
-      /* Step 1: hide all items before animation */
-      items.forEach(function (el) {
-        el.style.opacity    = '0';
-        el.style.visibility = 'hidden';
-      });
-
-      /* Step 2: set up observer */
-      const observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            const el        = entry.target;
-            const animation = el.dataset.animation || 'fadeInUp';
-            const delay     = parseInt(el.dataset.delay) || 0;
-
-            /* Step 3: wait for delay then fire animation */
-            setTimeout(function () {
-              el.style.visibility = 'visible';
-              el.style.opacity    = '1';
-              el.classList.add('animate__animated', 'animate__' + animation);
-
-              /* Step 4: stop observing after animation fires */
-              observer.unobserve(el);
-            }, delay);
-          }
-        });
-      }, {
-        threshold:   0.12,
-        rootMargin: '0px 0px -40px 0px'
-      });
-
-      /* Step 5: observe every item */
-      items.forEach(function (el) {
-        observer.observe(el);
-      });
-
+        setTimeout(function () {
+          el.style.visibility = 'visible';
+          el.style.opacity = '1';
+          el.classList.add('animate__animated', 'animate__' + animation);
+          observer.unobserve(el);
+        }, delay);
+      }
     });
-  </script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    grabCursor: true,
-    navigation: {
-      nextEl: ".mySwiper .swiper-button-next",
-      prevEl: ".mySwiper .swiper-button-prev",
-    },
-    speed: 500,
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
   });
 
-  const mentorsSwiper = new Swiper(".myMentorsSwiper", {
-    loop: true,
-    grabCursor: true,
-    navigation: {
-      nextEl: ".myMentorsSwiper .swiper-button-next",
-      prevEl: ".myMentorsSwiper .swiper-button-prev",
-    },
-    speed: 500,
-    slidesPerView: 1,
+  items.forEach(function (el) {
+    observer.observe(el);
   });
-
-const hfsSwiper = new Swiper(".hfsSwiper", {
-  loop: false,
-  grabCursor: true,
-  spaceBetween: 24,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  watchOverflow: true,
-  centerInsufficientSlides: true,
-  autoHeight: true,
-
-  autoplay: {
-    delay: 3000, // 3 seconds
-    disableOnInteraction: false,
-  },
-
-  pagination: {
-    el: ".hfs-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".hfs-next",
-    prevEl: ".hfs-prev",
-  },
-  speed: 500,
-
-  breakpoints: {
-    769: {
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-      autoHeight: false
-    }
-  }
-});
 
 });
 </script>
