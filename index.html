@@ -772,11 +772,6 @@
           <div class="form-error" id="timeline-error">This field is required.</div>
         </div>
 
-        <div class="form-group">
-          <label class="form-label">Tell us more about yourself <span class="req">*</span></label>
-          <textarea id="about" class="form-textarea"></textarea>
-          <div class="form-error" id="about-error">This field is mandatory.</div>
-        </div>
 
         <button class="form-btn" onclick="handleSubmit()">Submit</button>
       </div>
@@ -798,7 +793,7 @@
         <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="0">
           <input type="checkbox" id="faq1" class="faq-toggle" checked />
           <label class="faq-question" for="faq1">
-            <span>Is this course suitable for beginners?</span>
+            <span><strong>Is this course suitable for beginners?</strong></span>
             <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -811,7 +806,7 @@
         <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="100">
           <input type="checkbox" id="faq2" class="faq-toggle" />
           <label class="faq-question" for="faq2">
-            <span>What support or opportunities are available after course completion?</span>
+            <span><strong>What support or opportunities are available after course completion?</strong></span>
             <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -824,7 +819,7 @@
         <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="200">
           <input type="checkbox" id="faq3" class="faq-toggle" />
           <label class="faq-question" for="faq3">
-            <span>Are installment payment options available?</span>
+            <span><strong>Are installment payment options available?</strong></span>
             <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -837,7 +832,7 @@
         <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="300">
           <input type="checkbox" id="faq4" class="faq-toggle" />
           <label class="faq-question" for="faq4">
-            <span>What are the technical specifications of the complimentary workstation?</span>
+            <span><strong>What are the technical specifications of the complimentary workstation?</strong></span>
             <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -850,7 +845,7 @@
         <div class="faq-item aos-item" data-animation="fadeInUp" data-delay="400">
           <input type="checkbox" id="faq5" class="faq-toggle" />
           <label class="faq-question" for="faq5">
-            <span>Is the certificate accredited or industry-recognized?</span>
+            <span><strong>Is the certificate accredited or industry-recognized?</strong></span>
             <svg class="faq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path d="M3 6l6 6 6-6" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -1040,7 +1035,6 @@ document.addEventListener('DOMContentLoaded', function () {
       { id: 'email', errorId: 'email-error' },
       { id: 'goal', errorId: 'goal-error' },
       { id: 'timeline', errorId: 'timeline-error' },
-      { id: 'about', errorId: 'about-error' },
     ];
 
     fields.forEach(function({ id, errorId }) {
@@ -1069,13 +1063,13 @@ document.addEventListener('DOMContentLoaded', function () {
       display_name: document.getElementById('name').value.trim(),
       notes:
         document.getElementById('goal').value.trim() + ' | ' +
-        document.getElementById('timeline').value.trim() + ' | ' +
-        document.getElementById('about').value.trim(),
+        document.getElementById('timeline').value.trim(),
+        
       source: getParam('utm_source') || 'Landing Page',
       other_fields: {
         goal: document.getElementById('goal').value.trim(),
         timeline: document.getElementById('timeline').value.trim(),
-        about: document.getElementById('about').value.trim(),
+       
         utm_source: getParam('utm_source'),
         utm_medium: getParam('utm_medium'),
         utm_campaign: getParam('utm_campaign'),
